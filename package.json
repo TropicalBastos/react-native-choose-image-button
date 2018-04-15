@@ -1,6 +1,6 @@
 {
   "name": "react-native-choose-image-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Wrappable conponent that allows for native bindings of choosing images from library or camera",
   "main": "src/lib/index.js",
   "scripts": {
