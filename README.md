@@ -2,7 +2,7 @@
 
 * React Native wrappable component
 * Choose image or take photo, the resultant image is then passed to a callback you provide
-* Optional styles can be passed to props
+* Optional styles can be passed via props
 
 ## Getting Started
 
@@ -13,16 +13,14 @@ Installation
 ## Example
 
 First wrap your app with the ActionSheetProvider class which serves as a container for
-calling the native action popup that shows the options 'Take photo' 'Choose Image' etc...
+calling the native action popup that shows the options 'Take photo', 'Choose Image' etc...
 
 ```javascript
 export default class App extends React.Component {
   render() {
     return (
       <ActionSheetProvider>
-        <Provider store={store}>
-          <RootNavigator />
-        </Provider>
+        <RootApp />
       </ActionSheetProvider>
     );
   }
@@ -33,7 +31,7 @@ Then wrap your target button with the choose image button:
 
 ```javascript
 import Icon from 'react-native-vector-icons/Ionicons';
-import ChooseImageButton from '../other/ChooseImageButton';
+import ChooseImageButton from 'react-native-choose-image-button';
 
 const UploadButton = () => {
 
@@ -47,5 +45,7 @@ const UploadButton = () => {
 ```
 
 # Props
-`callback`: `The function that receives the resultant base64 image`
-`style`: `An style object to apply styles to the component`
+
+| callback | The function that receives the resultant base64 image |
+|----------|-------------------------------------------------------|
+| style    | An style object to apply styles to the component      |
