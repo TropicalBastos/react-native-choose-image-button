@@ -4,6 +4,8 @@
 * Choose image or take photo, the resultant image is then passed to a callback you provide
 * Optional styles can be passed via props
 
+<img width="25%" src="assets/screenshot.png" />
+
 ## Getting Started
 
 Installation
