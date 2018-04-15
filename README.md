@@ -54,5 +54,5 @@ const UploadButton = () => {
 | Prop       | Description                                                           |
 |------------|-----------------------------------------------------------------------|
 | style      | An style object to apply styles to the component                      |
-| onLoading  | The function that is called when the image is buffering and loadeding |
+| onLoading  | The function that is called when the image is buffering and loading   |
 | onComplete | The function that receives the resultant base64 image                 |
