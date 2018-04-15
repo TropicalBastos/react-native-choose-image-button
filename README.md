@@ -12,10 +12,12 @@ Installation
 
 ## Example
 
-First wrap your app with the ActionSheetProvider class which serves as a container for
+This library uses the `@expo/react-native-action-sheet` dependency so first wrap your app with the ActionSheetProvider class which serves as a container for
 calling the native action popup that shows the options 'Take photo', 'Choose Image' etc...
 
 ```javascript
+import { ActionSheetProvider, connectActionSheet } from '@expo/react-native-action-sheet';
+
 export default class App extends React.Component {
   render() {
     return (
@@ -37,7 +39,8 @@ const UploadButton = () => {
 
     return(
         <ChooseImageButton
-        callback={someFunction}
+        onLoading={someFunction}
+        onComplete={someFunction}
         style={someStyle}>
             <Icon name="ios-add"/>
         </ChooseImageButton>
@@ -48,7 +51,8 @@ const UploadButton = () => {
 
 ## Props
 
-| Prop     | Description                                           |
-|----------|-------------------------------------------------------|
-| style    | An style object to apply styles to the component      |
-| callback | The function that receives the resultant base64 image |
+| Prop       | Description                                                       |
+|------------|-------------------------------------------------------------------|
+| style      | An style object to apply styles to the component                  |
+| onLoading  | The function that is called when the image is buffered and loaded |
+| onComplete | The function that receives the resultant base64 image             |
