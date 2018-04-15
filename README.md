@@ -36,7 +36,9 @@ import ChooseImageButton from 'react-native-choose-image-button';
 const UploadButton = () => {
 
     return(
-        <ChooseImageButton>
+        <ChooseImageButton
+        callback={someFunction}
+        style={someStyle}>
             <Icon name="ios-add"/>
         </ChooseImageButton>
     );
@@ -44,8 +46,9 @@ const UploadButton = () => {
 }
 ```
 
-# Props
+## Props
 
-| callback | The function that receives the resultant base64 image |
+| Prop     | Description                                           |
 |----------|-------------------------------------------------------|
 | style    | An style object to apply styles to the component      |
+| callback | The function that receives the resultant base64 image |
