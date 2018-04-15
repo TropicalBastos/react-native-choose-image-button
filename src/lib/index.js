@@ -1,8 +1,3 @@
-import Example from './components/Example';
-import SecondExample from './components/SecondExample';
+import ChooseImageButton from './components/ChooseImageButton';
 
-export default Example;
-
-export {
-  SecondExample,
-};
+export default ChooseImageButton;

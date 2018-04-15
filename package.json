@@ -1,25 +1,21 @@
 {
-  "name": "create-react-library",
-  "version": "1.1.0",
-  "description": "React NPM library starter kit based on Facebook's create react app",
-  "main": "build/index.js",
+  "name": "react-native-choose-image-button",
+  "version": "1.0.0",
+  "description": "Wrappable conponent that allows for native bindings of choosing images from library or camera",
+  "main": "src/lib/index.js",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "demo": "node scripts/demo.js",
     "test": "node scripts/test.js --env=jsdom"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DimitriMikadze/create-react-library.git"
-  },
-  "author": "Dimitri Mikadze <dimitrimikadze@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/DimitriMikadze/create-react-library/issues"
-  },
-  "homepage": "https://github.com/DimitriMikadze/create-react-library#readme",
+  "author": "Ian Bastos <ian-bastos@live.com>",
+  "homepage": "https://github.com/TropicalBastos/react-native-choose-image-button#readme",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^1.0.2",
+    "expo": "^25.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz"
+  },
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
